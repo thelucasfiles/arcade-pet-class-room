@@ -55,7 +55,7 @@ In the `||animal: on classify||` block, whether the animal has stripes.
 #### ~ tutorialhint
 
 ```blocks
-animal.onClassifyUpdate(function (sprite) {
+animal.onClassifyUpdate(function (mySprite) {
     if (animal.detect(animal.animalProperties.HasStripes, mySprite)) {
     	
     }
@@ -75,7 +75,7 @@ herbivore or not *inside* the check from the previous step.
 #### ~ tutorialhint
 
 ```blocks
-animal.onClassifyUpdate(function (sprite) {
+animal.onClassifyUpdate(function (mySprite) {
     if (animal.detect(animal.animalProperties.HasStripes, mySprite)) {
     	if (animal.detect(animal.animalProperties.IsAHerbivore, mySprite)) {
     	      
@@ -95,7 +95,7 @@ Add code to indicate to the game that the sprite is a zebra
 #### ~ tutorialhint
 
 ```blocks
-animal.onClassifyUpdate(function (sprite) {
+animal.onClassifyUpdate(function (mySprite) {
     if (animal.detect(animal.animalProperties.HasStripes, mySprite)) {
     	if (animal.detect(animal.animalProperties.IsAHerbivore, mySprite)) {
     	    animal.classify(mySprite, animal.kind.Zebra)
@@ -133,7 +133,7 @@ Look at the code around the `||animal:is herbivore||` block. Where would
 you put the block for classifying a tiger?
 
 ```template
-animal.onClassifyUpdate(function (sprite) {
+animal.onClassifyUpdate(function (mySprite) {
 })
 ```
 
