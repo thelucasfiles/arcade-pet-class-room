@@ -135,6 +135,10 @@ you put the block for classifying a tiger?
 ```template
 animal.onClassifyUpdate(function (mySprite) {
 })
+
+game.onUpdateInterval(500, () => {
+    animal.generate()
+})
 ```
 
 ```package
