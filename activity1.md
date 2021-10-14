@@ -120,6 +120,13 @@ other ones. As we mentioned before, **tigers** and zebras have a lot in
 common! Can see where to modify your existing code to identify when a 
 sprite is a tiger?
 
+## Finishing up
+
+Congratulations! You've written a **decision tree** for classifying animals! 
+Use the other animal characteristics in the `||animal:has characteristic||`
+block to identify the remaining animals, or move on to the next tutorial to 
+try making some animals of your own.
+
 #### ~ tutorialhint
 
 Look at the code around the `||animal:is herbivore||` block. Where would 
