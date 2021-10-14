@@ -146,5 +146,5 @@ game.onUpdateInterval(500, () => {
 ```
 
 ```package
-animal-generate-classify=github:abchatra/animal-generate-classify#v0.0.10
+animal-generate-classify=github:abchatra/animal-generate-classify#v0.0.12
 ```
