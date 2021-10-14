@@ -50,12 +50,14 @@ use just two defining characteristics to classify zebras:
 The first thing most people notice about zebras is stripe pattern 
 that covers them from head to tail.
 
-In the `||animal: on classify||` block, whether the animal has stripes.
+In the `||animal: on classify||` block, write code to check whether 
+the animal has stripes.
 
 #### ~ tutorialhint
 
 ```blocks
 animal.onClassifyUpdate(function (mySprite) {
+    // @highlight
     if (animal.detect(animal.animalProperties.HasStripes, mySprite)) {
     	
     }
@@ -77,6 +79,7 @@ herbivore or not *inside* the check from the previous step.
 ```blocks
 animal.onClassifyUpdate(function (mySprite) {
     if (animal.detect(animal.animalProperties.HasStripes, mySprite)) {
+        // @highlight
     	if (animal.detect(animal.animalProperties.IsAHerbivore, mySprite)) {
     	      
         }
@@ -120,17 +123,18 @@ other ones. As we mentioned before, **tigers** and zebras have a lot in
 common! Can see where to modify your existing code to identify when a 
 sprite is a tiger?
 
+#### ~ tutorialhint
+
+Look at the code around the `||animal:detect property IsAHerbivore||` block. 
+Where would you put the check for classifying a tiger?
+
 ## Finishing up
 
 Congratulations! You've written a **decision tree** for classifying animals! 
-Use the other animal characteristics in the `||animal:has characteristic||`
+Use the other animal characteristics in the `||animal:detect property||`
 block to identify the remaining animals, or move on to the next tutorial to 
 try making some animals of your own.
 
-#### ~ tutorialhint
-
-Look at the code around the `||animal:is herbivore||` block. Where would 
-you put the block for classifying a tiger?
 
 ```template
 animal.onClassifyUpdate(function (mySprite) {
