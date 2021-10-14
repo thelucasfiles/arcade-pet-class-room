@@ -1,21 +1,58 @@
-# activity1
+### @explicitHints true
 
-## Classify a Zebra!
+# Build an Animal Classifier
 
-One type of animal we need to classify is the Zebra.
+## Decision Trees
+
+In this tutorial you will be building a **decision tree** for animal 
+classification! 
+
+An important building block for artificial intelligence, a decision tree 
+is really just a flowchart of questions! If you were playing twenty 
+questions, you might ask, *"Is it an animal?"* and based on that answer, you 
+could ask *"Is it a mammal?"* or *"Does it have four legs?"*
+
+![flow chart img]()
+
+In AI applications the computer builds this tree based on input data. 
+Today, you'll be acting as the "computer" and building a decision tree for 
+categorizing animals.
+
+## Sorting Animals 
+
+🕹 Go the **game screen** 🕹
+
+You will see a series of random animals being generated. Your goal is 
+to write code that will decide what kind of animal is currently on the 
+screen. 
+
+![image of three or four different animals]()
+
+[maybe explanation of starter code here too?]
+
+## Classify a Zebra! 🦓
+
+Let's start by classifying the **zebra**.
 
 ![add image of zebra sprite]()
 
-Zebras have two defining characteristics that we can use to classify them:
+Think about what characteristics a zebra has. What questions would 
+you ask to figure out if an animal was a zebra? Write down a list!
 
-* They have stripes
-* They are herbivores
+Your list may look a little different from ours, since today we will 
+use just two defining characteristics to classify zebras:
 
-## Check stripes
+* Zebras have **stripes**
+* Zebras are **herbivores**
 
-The first thing most people notice about zebras is stripe pattern that covers them from head to tail.
+## Stripes?
 
-Add a condition to check whether a sprite has stripes.
+The first thing most people notice about zebras is stripe pattern 
+that covers them from head to tail.
+
+In the `||animal: on classify||` block, whether the animal has stripes.
+
+#### ~ tutorialhint
 
 ```blocks
 animal.onClassifyUpdate(function (sprite) {
@@ -25,14 +62,17 @@ animal.onClassifyUpdate(function (sprite) {
 })
 ```
 
-## is herbivore
+## What's for lunch? 🥬
 
-Having stripes on it's own is not enough to identify whether an animal is a zebra or not;
-tigers also have stripes but are definitely not zebras, after all.
-We have to add more rules to make sure.
+We know that this animal has stripes, but is it a zebra? After all, tigers 
+also have stripes but are definitely not zebras. We have to ask a few more 
+questions to make sure.
 
-The other important characteristic we know about zebras is that they are herbivores.
-Add a rule to check whether the sprite is a herbivore or not *inside* the check from the previous step.
+The other important zebra characteristic we decided on is that they 
+are **herbivores**. Add blocks to check whether the sprite is an 
+herbivore or not *inside* the check from the previous step.
+
+#### ~ tutorialhint
 
 ```blocks
 animal.onClassifyUpdate(function (sprite) {
@@ -47,9 +87,12 @@ animal.onClassifyUpdate(function (sprite) {
 ## Identify!
 
 With these two checks, we have now identified that the animal must be a zebra
-(from the set of animals we currently have -- we might have to add more rules in the future when more species are discovered!)
+(from the set of animals we currently have -- we might have to add more rules 
+in the future when more species are discovered!)
 
 Add code to indicate to the game that the sprite is a zebra
+
+#### ~ tutorialhint
 
 ```blocks
 animal.onClassifyUpdate(function (sprite) {
@@ -61,18 +104,26 @@ animal.onClassifyUpdate(function (sprite) {
 })
 ```
 
-## Run the code
+## Play your game
 
-In the simulator, start spawning animals and see if they end up in the right spot.
+🕹 Go back to the **game screen** 🕹
 
-For now, since we've only written the rules for zebras, everything but zebras should just pass through.
+Watch the animals being spawned and see if they end up in the right spot.
 
-## Identify Tiger
+For now, since we've only written the rules for zebras, only zebras will
+end up in the right category.
 
-Now that we've identified one species, it's time to start identifying the other ones!
+## Lions and tigers, oh my!
 
-Add logic to identify when a sprite is a tiger.
+Now that we've identified one species, it's time to start identifying the 
+other ones. As we mentioned before, **tigers** and zebras have a lot in 
+common! Can see where to modify your existing code to identify when a 
+sprite is a tiger?
 
+#### ~ tutorialhint
+
+Look at the code around the `||animal:is herbivore||` block. Where would 
+you put the block for classifying a tiger?
 
 
 ```package
