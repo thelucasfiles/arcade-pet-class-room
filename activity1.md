@@ -93,7 +93,7 @@ With these two checks, we have now identified that the animal must be a zebra
 (from the set of animals we currently have -- we might have to add more rules 
 in the future when more species are discovered!)
 
-Add code to indicate to the game that the sprite is a zebra
+Add code to indicate to the game that the sprite is a zebra!
 
 #### ~ tutorialhint
 
@@ -132,8 +132,8 @@ Where would you put the check for classifying a tiger?
 
 Congratulations! You've written a **decision tree** for classifying animals! 
 Use the other animal characteristics in the `||animal:detect property||`
-block to identify the remaining animals, or move on to the next tutorial to 
-try making some animals of your own.
+block to identify the remaining animals. Challenge yourself to use as **few** 
+`||logic:if||` blocks as possible!
 
 
 ```template
