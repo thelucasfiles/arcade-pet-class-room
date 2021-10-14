@@ -132,6 +132,10 @@ try making some animals of your own.
 Look at the code around the `||animal:is herbivore||` block. Where would 
 you put the block for classifying a tiger?
 
+```template
+animal.onClassifyUpdate(function (sprite) {
+})
+```
 
 ```package
 animal-generate-classify=github:abchatra/animal-generate-classify#v0.0.10
