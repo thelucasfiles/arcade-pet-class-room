@@ -56,7 +56,7 @@ In the `||animal: on classify||` block, whether the animal has stripes.
 
 ```blocks
 animal.onClassifyUpdate(function (sprite) {
-    if (block for checking if sprite has stripes) {
+    if (animal.detect(animal.animalProperties.HasStripes, mySprite)) {
     	
     }
 })
@@ -76,8 +76,8 @@ herbivore or not *inside* the check from the previous step.
 
 ```blocks
 animal.onClassifyUpdate(function (sprite) {
-    if (block for checking if sprite has stripes) {
-    	  if (block for checking if sprite is a herbivore) {
+    if (animal.detect(animal.animalProperties.HasStripes, mySprite)) {
+    	if (animal.detect(animal.animalProperties.IsAHerbivore, mySprite)) {
     	      
         }
     }
@@ -96,9 +96,9 @@ Add code to indicate to the game that the sprite is a zebra
 
 ```blocks
 animal.onClassifyUpdate(function (sprite) {
-    if (block for checking if sprite has stripes) {
-    	  if (block for checking if sprite is a herbivore) {
-    	      sprite is a zebra!!
+    if (animal.detect(animal.animalProperties.HasStripes, mySprite)) {
+    	if (animal.detect(animal.animalProperties.IsAHerbivore, mySprite)) {
+    	    animal.classify(mySprite, animal.kind.Zebra)
         }
     }
 })
@@ -134,5 +134,5 @@ you put the block for classifying a tiger?
 
 
 ```package
-animal-generate-classify=github:abchatra/animal-generate-classify
+animal-generate-classify=github:abchatra/animal-generate-classify#v0.0.10
 ```
