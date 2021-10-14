@@ -9,10 +9,10 @@ classification!
 
 An important building block for artificial intelligence, a decision tree 
 is really just a flowchart of questions! If you were playing twenty 
-questions, you might ask, *"Is it an animal?"* and based on that answer, you 
-could ask *"Is it a mammal?"* or *"Does it have four legs?"*
+questions, you might ask, *"Is it a mammal?"* and based on that answer, you 
+could ask *"Is it a bird?"* or *"Does it have four legs?"*
 
-![flow chart img]()
+![A flow chart for classifying animals](https://raw.githubusercontent.com/jwunderl/arcade-pet-class-room/master/flowchart.png)
 
 In AI applications the computer builds this tree based on input data. 
 Today, you'll be acting as the "computer" and building a decision tree for 
@@ -26,15 +26,15 @@ You will see a series of random animals being generated. Your goal is
 to write code that will decide what kind of animal is currently on the 
 screen. 
 
-![image of three or four different animals]()
+![Six animal pixel sprites](https://raw.githubusercontent.com/jwunderl/arcade-pet-class-room/master/animals.png)
 
-[maybe explanation of starter code here too?]
+We'll be filling in the `||animal:on classify||` block in your workspace.
 
 ## Classify a Zebra! 🦓
 
 Let's start by classifying the **zebra**.
 
-![add image of zebra sprite]()
+![Zebra pixel sprite](https://raw.githubusercontent.com/jwunderl/arcade-pet-class-room/master/zebra.png)
 
 Think about what characteristics a zebra has. What questions would 
 you ask to figure out if an animal was a zebra? Write down a list!
