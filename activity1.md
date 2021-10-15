@@ -145,6 +145,19 @@ game.onUpdateInterval(500, () => {
 })
 ```
 
+```ghost
+let mySprite: Sprite = null
+if (!(animal.detect(animal.animalProperties.HasTwoLegs, mySprite))) {
+	
+} else if (animal.detect(animal.animalProperties.HasTwoLegs, mySprite) && animal.detect(animal.animalProperties.HasTwoLegs, mySprite)) {
+	
+} else if (animal.detect(animal.animalProperties.HasTwoLegs, mySprite) || animal.detect(animal.animalProperties.HasTwoLegs, mySprite)) {
+	
+} else {
+	
+}
+```
+
 ```package
 animal-generate-classify=github:abchatra/animal-generate-classify#v0.0.12
 ```
