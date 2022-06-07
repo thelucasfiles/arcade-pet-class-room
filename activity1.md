@@ -2,12 +2,12 @@
 
 # Build an Animal Classifier
 
-## Decision Trees
+## Decision Trees xyz
 
 In this tutorial you will be building a **decision tree** for animal 
 classification! 
 
-YOLO is really just a flowchart of questions! If you were playing twenty 
+YOLO cdis really just a flowchart of questions! If you were playing twenty 
 questions, you might ask, *"Is it a mammal?"* and based on that answer, you 
 could ask *"Is it a bird?"* or *"Does it have four legs?"*
 
